@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+h5 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  padding: 0 165px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  min-height: 500px;
+}
+
+[class*="class-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.up,
+.bottom {
+  display: flex;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.right {
+  max-width: 255px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.profilePicuture img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  gap: 17px;
+}
+
+.personInfo {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.personInfo h5 {
+  font-weight: 500;
+  color: white;
+  font-size: 13px;
+}
+.personInfo .isVerifiedGraduate {
+  font-weight: 500;
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+[class*="card-"] {
+  padding: 32px;
+  padding-top: 26px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.card-1 .profilePicuture img {
+  border: 3px solid #a775f1;
+}
+
+.card-4 .profilePicuture img {
+  border: 3px solid #733fc8;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card-1 {
+  color: white;
+  background-color: #733fc8;
+  position: relative;
+  z-index: 1;
+}
+.card-2 {
+  color: white;
+  background-color: #48556a;
+}
+.card-3 h5,
+.card-3 .title {
+  color: #48556a;
+}
+.card-4 {
+  color: white;
+  background-color: #19202d;
+}
+.card-5 h5,
+.card-5 .title {
+  color: #48556a;
+}
+
+.qouteIcon img {
+  top: 0;
+  right: 80px;
+  position: absolute;
+  z-index: -10;
+}
+
+@media screen and (max-width: 1440px) {
+  main {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cardWrapper,
+  .left,
+  .right,
+  .up,
+  .bottom {
+    flex-direction: column;
+  }
+  .right {
+    max-width: 100%;
+  }
+
+  main {
+    margin: 71px 0;
+  }
+  .title {
+      font-size: 16px;
+  }
+
+}
