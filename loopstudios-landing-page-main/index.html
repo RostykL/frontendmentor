@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section class="intro">
+      <header>
+        <div class="headerWrapper container">
+          <div class="logo"></div>
+          <ul class="nav">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+          <div class="hamburger">
+            <img src="./images/icon-hamburger.svg" alt="" />
+          </div>
+        </div>
+      </header>
+      <header class="hamburgerHeader">
+        <div class="hamHeader">
+          <div class="logo"></div>
+          <div class="hamburgerClose">
+            <img src="./images/icon-close.svg" alt="" />
+          </div>
+        </div>
+        <ul class="nav container">
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </header>
+      <div class="introHeading container">
+        <div class="introHeadingTitle">
+          <div class="introHeadingTitleText">
+            immersive experiences that deliver
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vrSection">
+      <div class="vrImage"></div>
+      <div class="vrInfo">
+        <div class="title">The leader in interactive vr</div>
+        <div class="description">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </div>
+      </div>
+    </section>
+
+    <section class="ourCreations">
+      <header>
+        <div class="ourCreationHeaderWrapper container">
+          <div class="title">our creations</div>
+          <div class="seeAllBtn"><button>see all</button></div>
+        </div>
+      </header>
+      <div class="creationsBlock container">
+        <div class="creation creation-1">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">Deep Earth</div>
+        </div>
+        <div class="creation creation-2">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">Night arcade</div>
+        </div>
+        <div class="creation creation-3">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">Soccer team vr</div>
+        </div>
+        <div class="creation creation-4">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">
+            The<br />
+            grid
+          </div>
+        </div>
+
+        <div class="creation creation-5">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">from up above vr</div>
+        </div>
+        <div class="creation creation-6">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">pocket borealis</div>
+        </div>
+        <div class="creation creation-7">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">the curiosity</div>
+        </div>
+        <div class="creation creation-8">
+          <!-- <div class="creationImg"></div> -->
+          <div class="creationTitle">make it fisheye</div>
+        </div>
+
+        <div class="ourCreationHeaderWrapper container hideSHOW">
+          <div class="seeAllBtn"><button>see all</button></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerCenter">
+        <div class="up container">
+          <div class="logo"></div>
+          <div class="social">
+            <ul class="nav">
+              <li class="fb icon"></li>
+              <li class="tw icon"></li>
+              <li class="pt icon"></li>
+              <li class="in icon"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="down container">
+          <div class="navLinks">
+            <ul class="nav">
+              <li>About</li>
+              <li>Careers</li>
+              <li>Events</li>
+              <li>Products</li>
+              <li>Support</li>
+            </ul>
+          </div>
+          <div class="rightReserved">
+            © 2021 Loopstudios. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/rostykl">Rostyk Lukavyi</a>.
+    </div>
+    <script>
+      let hamburger = document.getElementsByClassName("hamburger")[0];
+      let hamburgerClose = document.getElementsByClassName("hamburgerClose")[0];
+      let body = document.getElementsByTagName("body")[0];
+
+      let hamburgerHeader = document.getElementsByClassName(
+        "hamburgerHeader"
+      )[0];
+      hamburgerClose.addEventListener("click", () => {
+        hamburgerHeader.classList.toggle("active");
+        body.style.overflow = "scroll";
+      });
+      hamburger.addEventListener("click", () => {
+        hamburgerHeader.classList.toggle("active");
+        body.style.overflow = "hidden";
+      });
+      console.log(hamburger);
+    </script>
+  </body>
+</html>
